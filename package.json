@@ -1,0 +1,21 @@
+{
+  "name": "devbond",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/app.js",
+    "dev":"nodemon src/app.js"
+  },
+  "keywords": [
+    "reactjs",
+    "nodejs",
+    "expressjs",
+    "mongodb"
+  ],
+  "author": "\"Aman Upadhyay\"",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
