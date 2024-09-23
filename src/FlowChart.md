@@ -6,5 +6,8 @@
 -Write request handler /test,/hello
 -Install nodemon and update package.json script file (npm i -g nodemon);
 # Episode 4
+-Routing and playing with riuting and request handling
+-Making get,post and deleted call in postman api handling
+
 
 

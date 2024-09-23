@@ -1,16 +1,25 @@
 const express=require("express");
 const app=express();
 
-//Handling request from the server
-app.use("/test",(req,res)=>{
-    res.send("Hello from Dashboard");
+// Handling request from the server
+
+
+app.get("/user",(req,res)=>{
+    res.send("Get request call make succsessfully");
+})
+
+app.post("/user",(req,res)=>{
+    //here Write logic for posting data
+    res.send("Data is posted on server easily")
 });
 
-app.use("/hello",(req,res)=>{
-    res.send("Hello Aman How are you")
-});
+app.delete("/user",(req,res)=>{
+    //Here write logic for deleting data from sever
+    res.send("Data is Deleted Successfully");
+})
+
 
 //Creating Server
-app.listen(3333,()=>{
-    console.log("Server is created on porn no 3333.....");
+app.listen(7777,()=>{
+    console.log("Server is created on porn no 7777.....");
 });
