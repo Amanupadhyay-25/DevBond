@@ -4,22 +4,25 @@ const app=express();
 // Handling request from the server
 
 
-app.get("/user",(req,res)=>{
-    res.send("Get request call make succsessfully");
-})
-
-app.post("/user",(req,res)=>{
-    //here Write logic for posting data
-    res.send("Data is posted on server easily")
+app.use("/user",(req,res,next)=>{
+    console.log('1 ');
+    next();
+},
+(req,res,next)=>{
+    console.log('2');
+    next();
+},
+(req,res,next)=>{
+    console.log('3');
+    next();
+},
+(req,res,next)=>{
+    console.log('4');
+    res.send("Respond 4");
 });
-
-app.delete("/user",(req,res)=>{
-    //Here write logic for deleting data from sever
-    res.send("Data is Deleted Successfully");
-})
 
 
 //Creating Server
 app.listen(7777,()=>{
-    console.log("Server is created on porn no 7777.....");
+    console.log("Server is created on port no 7777.....");
 });
